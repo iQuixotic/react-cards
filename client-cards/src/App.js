@@ -20,13 +20,15 @@ class App extends Component {
 
     saveClick = id => {
       this.setState({ count: this.state.count + 1 });
-    
-          
       shuffle(characters)
     };
 
 
+    failOrWin = () => {
+      console.log('this is where my callback lives')
+      CharacterCard.fromChild()      
     
+    };    
 
 
   render() {
@@ -37,6 +39,8 @@ class App extends Component {
           <CharacterCard
             saveClick={this.saveClick}
             checkCount={this.checkCount}
+            fromChild={this.fromChild}
+            failOrWin={this.failOrWin}
             
             id={character.id}
             key={character.id}

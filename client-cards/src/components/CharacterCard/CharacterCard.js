@@ -6,13 +6,22 @@ constructor(props){
   super(props)
 }
 state = {
-  count:0
+  countGO:0
 }
 
 isGameOver = () => {
-  this.setState({ count: this.state.count + 1 });
-  if(this.state.count>0){
-    console.log('Game Over from char')
+  this.setState({ countGO: this.state.countGO + 1 });
+  if(this.state.countGO>0){
+    console.log('Game Over from Character Card !!!')
+  } else {
+    console.log('Not Game Over')
+  }
+}
+
+fromChild = () => {
+  this.setState({ countGO: this.state.countGO + 1 });
+  if(this.state.countGO>0){
+    console.log('Game Over from Character Card !!!')
   } else {
     console.log('Not Game Over')
   }
