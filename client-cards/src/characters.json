@@ -1,97 +1,62 @@
 [
   {
     "id": 1,
-    "name": "SpongeBob",
-    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/Spongebob-squarepants.svg/666px-Spongebob-squarepants.svg.png",
-    "occupation": "Fry Cook",
-    "hasBeenClicked": false
+    "name": "Sokka",
+    "image": "http://fc00.deviantart.net/fs70/i/2012/179/2/8/sokka_by_ayelethashahar-d555hsc.png"
   },
   {
     "id": 2,
-    "name": "Mr. Krabs",
-    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
-    "occupation": "Restaurant Owner",
-    "location": "A Giant Anchor",
-    "hasBeenClicked": false
+    "name": "Aang",
+    "image": "https://vignette.wikia.nocookie.net/nickelodeon/images/c/ce/Aang.png/revision/latest?cb=20150520032544"
   },
   {
     "id": 3,
-    "name": "Squidward",
-    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-    "occupation": "Cashier",
-    "location": "An Easter Island Head",
-    "hasBeenClicked": false
+    "name": "Zuko",
+    "image": "https://vignette.wikia.nocookie.net/nickelodeon/images/7/73/Avatar_%3D_Zuko_001.png/revision/latest?cb=20090616194622"
   },
   {
     "id": 4,
-    "name": "Dexter",
-    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
-    "occupation": "Boy Genius",
-    "location": "A Secret Laboratory",
-    "hasBeenClicked": false
+    "name": "Katara",
+    "image": "http://images3.wikia.nocookie.net/__cb20111119141734/videogamefanon/images/3/3d/Katara_(1).png"
   },
   {
     "id": 5,
-    "name": "Courage",
-    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
-    "occupation": "A Cowardly Dog",
-    "location": "Nowhere, Kansas",
-    "hasBeenClicked": false
+    "name": "Iroh",
+    "image": "https://piandao.org/resources/transparencies/render12.png"
   },
   {
     "id": 6,
-    "name": "Doug Funnie",
-    "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
-    "occupation": "Student",
-    "location": "Bluffington",
-    "hasBeenClicked": false
+    "name": "Toph",
+    "image": "https://33.media.tumblr.com/f61f22fe6072433efba3be6cb39bd262/tumblr_n2pqjcC1kT1s1rd1xo1_500.gif"
   },
   {
     "id": 7,
-    "name": "Bugs Bunny",
-    "image": "https://vignette2.wikia.nocookie.net/deathbattlefanon/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20151206010607",
-    "occupation": "Looney Toon",
-    "location": "A Rabbit Burrow",
-    "hasBeenClicked": false
+    "name": "Azula",
+    "image": "https://vignette.wikia.nocookie.net/villains/images/a/ac/Azula_Render.png/revision/latest?cb=20170715180812"
   },
   {
     "id": 8,
-    "name": "Johnny Bravo",
-    "image": "http://vignette3.wikia.nocookie.net/p__/images/9/9a/Johnny_Bravo.png/revision/latest?cb=20131031233339&path-prefix=protagonist",
-    "occupation": "Ladies Man",
-    "location": "Aron City",
-    "hasBeenClicked": false
+    "name": "Ty Lee",
+    "image": "https://i.pinimg.com/originals/db/de/fa/dbdefa9cfcf430401073bcddce3de47e.png"
   },
   {
     "id": 9,
-    "name": "Tommy Pickles",
-    "image": "https://vignette4.wikia.nocookie.net/uncyclopedia/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20110530102641",
-    "occupation": "Adventurer",
-    "location": "California",
-    "hasBeenClicked": false
+    "name": "Jet",
+    "image": "https://i.pinimg.com/originals/e9/b4/f8/e9b4f83b7a6c5c65a57e59b377d107c1.png"
   },
   {
     "id": 10,
-    "name": "Rocko",
-    "image": "http://vignette3.wikia.nocookie.net/rockosmodernlife/images/9/9e/Rockos-modern-life-4e582a8f06a41.png/revision/latest?cb=20130522173416",
-    "occupation": "Cashier",
-    "location": "O-Town, California",
-    "hasBeenClicked": false
+    "name": "Momo",
+    "image": "https://i.pinimg.com/originals/b0/05/03/b0050338b592faa9ab5aa17dffdeaede.png"
   },
   {
     "id": 11,
-    "name": "Captain Planet",
-    "image": "http://vignette2.wikia.nocookie.net/dragon-rap-battles/images/b/b6/Captain_Planet.png/revision/latest?cb=20160911200836",
-    "occupation": "Superhero",
-    "location": "Earth",
-    "hasBeenClicked": false
+    "name": "Appa",
+    "image": "https://vignette.wikia.nocookie.net/aang/images/6/6e/Appa_001.png/revision/latest?cb=20120324162536&path-prefix=no"
   },
   {
     "id": 12,
-    "name": "Ickis",
-    "image": "http://static.tvtropes.org/pmwiki/pub/images/ickis.png",
-    "occupation": "Ahhhh! A Real Monster!",
-    "location": "Under a City Dump",
-    "hasBeenClicked": false
+    "name": "Korra",
+    "image": "https://vignette.wikia.nocookie.net/p__/images/0/02/Korrarender.png/revision/latest?cb=20151028224040&path-prefix=protagonist"
   }
 ]

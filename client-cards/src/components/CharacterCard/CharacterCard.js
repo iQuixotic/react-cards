@@ -24,20 +24,6 @@ render() {
     <div className="img-container" onClick={() => this.props.saveClick(this.props.id)}>
       <img onClick={() => this.isGameOver(this.props.id)} alt={this.props.name} src={this.props.image}  />
     </div>
-    <div className="content">
-      <ul>
-        <li>
-          <strong>Name:</strong> {this.props.name}
-        </li>
-        <li>
-          <strong>Occupation:</strong> {this.props.occupation}
-        </li>
-        <li>
-          <strong>Location:</strong> {this.props.location}
-        </li>
-      </ul>
-    </div>
-      
   </div>
   )
 }
