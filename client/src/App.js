@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CharacterCard from "./components/CharacterCard";
-import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
+import CharacterCard from "./components/characterCard";
+import Wrapper from "./components/wrapper";
+import Title from "./components/title";
 import characters from "./characters.json";
 import "./App.css";
 import shuffle from "shuffle-array"
@@ -18,10 +18,18 @@ class App extends Component {
   
 componentWillUpdate = () => {
 this.myGOcheck() ?
-  // await console.log(this.myGOcheck()) :
-  // await console.log(this.myGOcheck())
-  this.setState({ isGameOver: true }) :
+  this.endGame() :
   shuffle(characters) 
+}
+
+endGame = () => {
+  this.state.isGameOver ?
+  console.log('nothing') :
+  this.setState({ isGameOver: true }) 
+}
+
+returnThis = (arg) => {
+  return arg;
 }
     saveClick = async (id) => {
       myArr.push(id)
@@ -41,7 +49,6 @@ this.myGOcheck() ?
         else {
           return true;
         }
-        // return false;
       }
         return false;
     }
