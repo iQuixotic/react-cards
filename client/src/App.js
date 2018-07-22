@@ -6,41 +6,60 @@ import characters from "./characters.json";
 import "./App.css";
 import shuffle from "shuffle-array"
 
+const myArr = [];
 class App extends Component {
   
   state = {
-    characters, 
+    characters,
     count: 0,
+    goCheckArr: [],
+    isGameOver: false
   };
   
+componentWillUpdate = () => {
+this.myGOcheck() ?
+  // await console.log(this.myGOcheck()) :
+  // await console.log(this.myGOcheck())
+  this.setState({ isGameOver: true }) :
+  shuffle(characters) 
+}
+    saveClick = async (id) => {
+      myArr.push(id)
+      await this.setState({ 
+        count: this.state.count + 1,        
+        goCheckArr: myArr
+      });
+    }; 
 
-  componentDidMount(){
-    console.log('I was triggered during componentDidMount');
-  }
+    myGOcheck = () => {
+      const arr = [];
+      console.log(this.state.goCheckArr, arr)
+      for(let i=0; i<= this.state.goCheckArr.length; i++) {
+        if(arr[this.state.goCheckArr[i]] === undefined) {
+          arr[this.state.goCheckArr[i]] = 1;
+        }
+        else {
+          return true;
+        }
+        // return false;
+      }
+        return false;
+    }
 
-    saveClick = id => {
-      this.setState({ count: this.state.count + 1 });
-      shuffle(characters)
-    };
-
-
-    failOrWin = () => {
-      console.log('this is where my callback lives')
-      CharacterCard.fromChild()      
-    
-    };    
 
 
   render() {
     return (
       <Wrapper>
         <Title>Click Count: {this.state.count}</Title>
-        {this.state.characters.map(character => (
+        {this.state.isGameOver ?
+        <div></div> : 
+        (         
+          this.state.characters.map(character => (
           <CharacterCard
             saveClick={this.saveClick}
             checkCount={this.checkCount}
             fromChild={this.fromChild}
-            failOrWin={this.failOrWin}
             
             id={character.id}
             key={character.id}
@@ -48,9 +67,10 @@ class App extends Component {
             image={character.image}
             occupation={character.occupation}
             location={character.location}
-            
           />
-        ))}
+        )        
+          ))}
+        
       </Wrapper>
     );
   }

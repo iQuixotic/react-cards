@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+const expressValidator = require('express-validator');
+const expressSession = require('express-sessions')
+
 // Define middleware here
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
