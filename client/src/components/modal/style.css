@@ -1,18 +1,36 @@
+.Loss, .Win { 
+    position: fixed;
+    width: 70%;
+    height: 70%;
+    z-index: 1001; 
+}
+
 .Loss {
-    
+    background: url(https://media1.giphy.com/media/9Y5BbDSkSTiY8/200.webp) no-repeat fixed center;  
 }
 
 .Modal {
+    text-align: center;
+    align-content: center;
     width: 50%;
-    height: 50%;
+    height: 70%;
     position: fixed;
     z-index: 1000;
     left: 25%;
     top: 25%;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
+}
+
+.try-again {
+    
+    position: relative;
+    top: 85%;
+
+    color: white;
+    background: rgb(0, 17, 255);
 }
 
 .Win {
-
+    background: url(https://media2.giphy.com/media/EHKRUd3NpbHFe/200w.webp) no-repeat fixed center;
 }
 

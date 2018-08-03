@@ -6,6 +6,7 @@ const Modal = (props) => {
     return(
         <div className='Modal'>
             {props.children}
+            <button className='try-again'>TRY AGAIN</button>
         </div>
     );
 }
