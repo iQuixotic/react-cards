@@ -2,12 +2,12 @@ import React from "react";
 
 import './style.css';
 
-const Modal = (props) => {
+const Backdrop = (props) => {
     return(
-        <div className='Modal'>
+        <div className='Backdrop'>
             {props.children}
         </div>
     );
 }
 
-export default Modal;
+export default Backdrop;

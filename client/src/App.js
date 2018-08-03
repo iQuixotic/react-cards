@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import CharacterCard from "./components/characterCard";
 import Wrapper from "./components/wrapper";
 import Title from "./components/title";
+import Backdrop from "./components/backdrop";
+import { Modal, Win, Loss} from "./components/modal";
+
+
+
 import characters from "./characters.json";
 import "./App.css";
 import shuffle from "shuffle-array"
@@ -17,15 +22,17 @@ class App extends Component {
   };
   
 componentWillUpdate = () => {
-this.myGOcheck() ?
+this.myGOcheck() || this.myWinCheck() ?
   this.endGame() :
   shuffle(characters) 
+  console.log(this.myGOcheck(), this.myWinCheck())
 }
 
 endGame = () => {
   this.state.isGameOver ?
   console.log('nothing') :
   this.setState({ isGameOver: true }) 
+  console.log(this.state)
 }
 
 returnThis = (arg) => {
@@ -53,6 +60,12 @@ returnThis = (arg) => {
         return false;
     }
 
+    myWinCheck = () => {
+      return false;
+      // this.setState({
+      //   myGOcheck: true
+      // })
+    }
 
 
   render() {
@@ -60,13 +73,16 @@ returnThis = (arg) => {
       <Wrapper>
         <Title>Click Count: {this.state.count}</Title>
         {this.state.isGameOver ?
-        <div></div> : 
+        (
+        <div>
+          <Backdrop /><Modal> {this.state.goCheckArr.length === 2 ? <Win/> : <Loss/>}</Modal>
+        </div> ) : 
         (         
           this.state.characters.map(character => (
           <CharacterCard
             saveClick={this.saveClick}
             checkCount={this.checkCount}
-            fromChild={this.fromChild}
+            // fromChild={this.fromChild}
             
             id={character.id}
             key={character.id}
