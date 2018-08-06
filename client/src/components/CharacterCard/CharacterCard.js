@@ -20,4 +20,5 @@ render() {
   )
 }
 }
+
 export default CharacterCard;
