@@ -23,7 +23,8 @@
     "express": "^4.15.4",
     "express-session": "^1.15.6",
     "express-validator": "^5.2.0",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "path": "^0.12.7"
   },
   "engines": {
     "npm": "6.3.0"
