@@ -25,30 +25,30 @@ componentWillUpdate = () => {
 this.myGOcheck() || this.myWinCheck() ?
   this.endGame() :
   shuffle(characters) 
-  console.log(this.myGOcheck(), this.myWinCheck())
 }
 
 endGame = () => {
-  this.state.isGameOver ?
-  console.log('nothing') :
-  this.setState({ isGameOver: true }) 
-  console.log(this.state)
+  if(!this.state.isGameOver) {
+    this.setState({ isGameOver: true })
+  }
 }
 
 returnThis = (arg) => {
   return arg;
 }
-    saveClick = async (id) => {
-      myArr.push(id)
-      await this.setState({ 
-        count: this.state.count + 1,        
-        goCheckArr: myArr
-      });
+    saveClick = (id) => {
+      if(!this.myWinCheck()){
+        myArr.push(id)
+        this.setState({ 
+          count: this.state.count + 1,        
+          goCheckArr: myArr
+        });
+      }
+    
     }; 
 
     myGOcheck = () => {
       const arr = [];
-      console.log(this.state.goCheckArr, arr)
       for(let i=0; i<= this.state.goCheckArr.length; i++) {
         if(arr[this.state.goCheckArr[i]] === undefined) {
           arr[this.state.goCheckArr[i]] = 1;
@@ -61,28 +61,28 @@ returnThis = (arg) => {
     }
 
     myWinCheck = () => {
+      if(this.state.goCheckArr.length === 12){
+        return true
+      }
       return false;
-      // this.setState({
-      //   myGOcheck: true
-      // })
     }
 
 
   render() {
     return (
-      <Wrapper>
+      <div>
         <Title>Click Count: {this.state.count}</Title>
+        <Wrapper>
         {this.state.isGameOver ?
         (
         <div>
-          <Backdrop /><Modal> {this.state.goCheckArr.length === 2 ? <Win/> : <Loss/>}</Modal>
+          <Backdrop /><Modal> {!this.myGOcheck() && this.myWinCheck() ? <Win/> : <Loss/>}</Modal>
         </div> ) : 
         (         
           this.state.characters.map(character => (
           <CharacterCard
             saveClick={this.saveClick}
             checkCount={this.checkCount}
-            // fromChild={this.fromChild}
             
             id={character.id}
             key={character.id}
@@ -93,8 +93,8 @@ returnThis = (arg) => {
           />
         )        
           ))}
-        
-      </Wrapper>
+        </Wrapper>
+      </div>
     );
   }
 }

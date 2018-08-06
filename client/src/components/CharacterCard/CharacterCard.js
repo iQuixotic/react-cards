@@ -2,29 +2,12 @@ import React, { Component } from "react";
 import "./style.css";
 
 class CharacterCard extends Component {
-constructor(props){
-  super(props)
-}
 state = {
   countGO:0
 }
 
 isGameOver = () => {
   this.setState({ countGO: this.state.countGO + 1 });
-  if(this.state.countGO>0){
-    console.log('Game Over from Character Card !!!')
-  } else {
-    console.log('Not Game Over')
-  }
-}
-
-fromChild = () => {
-  this.setState({ countGO: this.state.countGO + 1 });
-  if(this.state.countGO>0){
-    console.log('Game Over from Character Card !!!')
-  } else {
-    console.log('Not Game Over')
-  }
 }
 
 render() {

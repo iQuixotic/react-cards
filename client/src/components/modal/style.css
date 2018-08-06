@@ -1,16 +1,28 @@
 .Loss, .Win { 
-    position: fixed;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 3rem;
+    font-style: cursive;
+    position: absolute;
     width: 70%;
     height: 70%;
     z-index: 1001; 
 }
 
-.Loss {
-    background: url(https://media1.giphy.com/media/9Y5BbDSkSTiY8/200.webp) no-repeat fixed center;  
+.Modal-img {
+    display: block;
+    text-align: center
+}
+
+.Modal-text {
+    position: relative;
+    left: 25%;
+    text-align: center;
 }
 
 .Modal {
     text-align: center;
+    border-radius: 5px;
     align-content: center;
     width: 50%;
     height: 70%;
@@ -19,18 +31,41 @@
     left: 25%;
     top: 25%;
     background-color: rgb(255, 255, 255);
+    animation: popup .7s;
 }
 
-.try-again {
-    
+.try-again {    
+    font-size: 2rem;
+    padding: 8px;
     position: relative;
     top: 85%;
-
     color: white;
-    background: rgb(0, 17, 255);
+    border: none;
+    border-radius: 4px;
+    background: rgb(73, 81, 192);
 }
 
 .Win {
     background: url(https://media2.giphy.com/media/EHKRUd3NpbHFe/200w.webp) no-repeat fixed center;
 }
 
+@media screen and (max-width: 600px) {
+
+    .Modal {
+      left: 15%;
+      top: 20%;
+      height: 70%;
+      width: 70%;
+    }
+  }
+
+  @keyframes popup {
+    0%{
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+  }

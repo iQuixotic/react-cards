@@ -7,4 +7,32 @@ html, body, #root {
   padding: 0;
   margin: 0;
   height: 100%;
+  font-size: 10px;
+}
+
+body {
+  background: rgb(29, 29, 29);
+}
+
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 8px;
+  }
+  
+}
+
+@media screen and (max-width: 470px) {
+  html {
+    font-size: 6px;
+  }
+  
+}
+
+
+@media screen and (max-width: 40px) {
+  html {
+    font-size: 4px;
+  }
+  
 }

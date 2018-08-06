@@ -6,7 +6,7 @@ const Modal = (props) => {
     return(
         <div className='Modal'>
             {props.children}
-            <button className='try-again'>TRY AGAIN</button>
+            <button className='try-again' onClick={() => document.location.reload()}>TRY AGAIN</button>
         </div>
     );
 }
