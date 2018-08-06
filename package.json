@@ -25,10 +25,5 @@
     "express-validator": "^5.2.0",
     "if-env": "^1.0.4",
     "path": "^0.12.7"
-  },
-  "engines": {
-    "npm": "6.3.0",
-    "node": "6.3.0",
-    "yarn": "1.6.0"
   }
 }
