@@ -2,7 +2,7 @@
 
 ### Technologies Used
  
-| Technology | Use |
+| Technology | Use 
 | --- | --- | --- |
 javascript | front-end and back-end language|
 nodejs | used for backend js |
