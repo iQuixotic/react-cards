@@ -16,6 +16,8 @@ The goal of this game is to click each of the 12 cards once. Enjoy !!
 
 click on the link below to play the game.
 
- ![image](client/public/img/cards.png)
-
 https://avatar-card-tribute-game-89458.herokuapp.com/
+
+## This is It 
+
+ ![image](client/public/img/cards.png)
