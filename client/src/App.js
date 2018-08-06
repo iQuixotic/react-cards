@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import CharacterCard from "./components/card";
-import Wrapper from "./components/wrapper";
+import Wrapper from "./components/wrap";
 import Title from "./components/header";
 import Backdrop from "./components/backdrop";
-import { Modal, Win, Loss} from "./components/modal";
+import { Modal, Win, Loss } from "./components/modal";
 
 
 
