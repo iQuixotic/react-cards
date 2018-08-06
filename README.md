@@ -1,7 +1,7 @@
 # Avatar Card Game
 
 ### Technologies Used
-
+ 
 | Technology | Use |
 | --- | --- | --- |
 javascript | front-end and back-end language|

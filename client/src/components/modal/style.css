@@ -4,19 +4,23 @@
     font-size: 3rem;
     font-style: cursive;
     position: absolute;
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
     z-index: 1001; 
 }
 
 .Modal-img {
-    display: block;
-    text-align: center
+    width: 100%;
+    text-align: center;
+}
+
+.Modal-img img {
+    max-width: 80%;
 }
 
 .Modal-text {
     position: relative;
-    left: 25%;
+    padding: 1rem 1rem 4rem;
     text-align: center;
 }
 
@@ -31,7 +35,7 @@
     left: 25%;
     top: 25%;
     background-color: rgb(255, 255, 255);
-    animation: popup .7s;
+    animation: popup 1s;
 }
 
 .try-again {    
@@ -45,8 +49,8 @@
     background: rgb(73, 81, 192);
 }
 
-.Win {
-    background: url(https://media2.giphy.com/media/EHKRUd3NpbHFe/200w.webp) no-repeat fixed center;
+.try-again:hover {
+    background-color: black;
 }
 
 @media screen and (max-width: 600px) {

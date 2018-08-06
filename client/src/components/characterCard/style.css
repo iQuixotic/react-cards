@@ -8,6 +8,10 @@
   width: 28rem;
 }
 
+.card:hover {
+  animation: shake .4s;
+}
+
 .card > .img-container {
   border-radius: 7px;
   height: 100%;
@@ -30,10 +34,39 @@
   
 }
 
+@media screen and (max-width: 600px) {
+
+.card:hover {
+  animation: none;
+}
+}
+
 @media screen and (max-width: 400px) {
 
   .card {
     height: 27rem;
     width: 20rem;
+  }
+}
+
+
+@keyframes shake {
+  0%{
+      transform: rotate(-1deg);
+  }
+  20%{
+      transform: rotate(1deg);
+  }
+  40%{
+      transform: rotate(-1deg);
+  }
+  60%{
+      transform: rotate(1deg);
+  }
+  80%{
+      transform: rotate(-1deg);
+    }
+  100%{
+      transform: rotate(0deg);
   }
 }
